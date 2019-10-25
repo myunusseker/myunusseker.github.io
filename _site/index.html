@@ -23,6 +23,48 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Container for flexboxes */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Create four equal columns */
+    .column {
+      flex: 25%;
+      margin-right: 30px;
+      padding: 20px;
+      padding-bottom: 100px;
+    }
+
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        flex: 50%;
+      }
+    }
+
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+    .border-right {
+        border-right: 1px solid #eee;
+    }
+    </style>
 </head> 
 
 <body>
@@ -32,27 +74,30 @@
                 <img class="profile" src="assets/img-profile.jpg" alt="" />
                 <h1 class="name">M. Yunus Seker</h1>
                 <h3 class="tagline">Msc Student</h3>
+                </br>
+                <i class="fa fa-envelope"></i> <a href="mailto: yourname@email.com">yunus.seker1@boun.edu.tr</a>
+                <br>
+                <i class="fa fa-envelope"></i> <a href="mailto: yourname@email.com">m.yunusseker@gmail.com</a>
+                <br>
+                <i class="fa fa-phone"></i> <a href="tel:0123 456 789">90 506 621 24 24</a>
+                <br><br>
+                <a href="https://www.github.com/myunusseker"><i class="fa fa-github"></i> Github </a>
+                
+                <a href="https://www.youtube.com/channel/UCnuNv6Z6zWkpcDnvn17-irg"><i class="fa fa-youtube"></i> Youtube </a>
+                
+                <a href="https://www.twitter.com/myunusseker"><i class="fa fa-twitter"></i> Twitter </a>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">yunus.seker1@boun.edu.tr</a></li>
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">m.yunusseker@hotmail.com</a></li>
-                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:0123 456 789">90 506 621 24 24</a></li>
+                    <li class="page"><a href="/index.html"><i class="fa fa-home"></i> Homepage</a></li>
+                    <li class="page"><a href="/resume.html"><i class="fa fa-user"></i> Resume / CV</a></li>
+                    <li class="page"><a href="/publications.html"><i class="fa fa-rocket"></i> Publications</a></li>
+                    <li class="page"><a href="/videos.html"><i class="fa fa-video-camera"></i> Project Videos</a></li>
+                    <li class="page"><a href="/fun.html"><i class="fa fa-star"></i> Fun</a></li>
                 </ul>
             </div><!--//contact-container-->
             <div class="education-container container-block">
-                <h2 class="container-block-title">Education</h2>
-                <div class="item">
-                    <h4 class="degree">MSc in Computer Engineering</h4>
-                    <div class="time">2017 - Current</div>
-                    <h5 class="meta">Bogazici University </br> GPA 3.70/4.0 </h5>
-                </div><!--//item-->
-		        <div class="item">
-                    <h4 class="degree">BSc in Computer Engineering</h4>
-                    <h5 class="meta">Bogazici University </br> GPA 3.44/4.0 </h5>
-                    <div class="time">2012 - 2017</div>
-                </div><!--//item-->
             </div><!--//education-container-->
         </div><!--//sidebar-wrapper-->
         
@@ -66,128 +111,34 @@
                     </p>
                 </div><!--//summary-->
             </section><!--//section-->
-            
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-university"></i>Academic Experience</h2>
-                <div class="intro">
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Research Assistant</h3>
-                                <div class="time">2017 - Current</div>
-                            </div><!--//upper-row-->
-                            <div class="company">Bogazici University, ColorsLAB, Istanbul</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Supervisor: <strong>Assist.Prof. Emre Ugur</strong>, Bogazici University </br> </li>
-                                <li>Co-supervisor: <strong>Prof. Justus Piater</strong>, University of Innsbruck </li>
-                                <li>ColorsLAB webpage: <a href="http://colors.cmpe.boun.edu.tr/"> link </a></li>
-                            </ul>
-                        </div><!--//details-->
-                    </div><!--//item-->
-                    <hr>
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Full-time Researcher</h3>
-                                <div class="time">2017 - Current</div>
-                            </div><!--//upper-row-->
-                            <div class="company">IMAGINE, EU H2020 Project</div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>The project aims to enable robots to understand the structure of their environment and how it is affected by their actions</li>
-                                <li>My responsibility is to design an association engine that helps the robot to find object affordances, relative action parameters, 
-                                and to predict the effects of the actions</li>
-                                <li>Using visual, haptic and geometrical features with deep neural networks and classical methods</li>
-                            </ul>
-                        </div><!--//details-->
-                    </div><!--//item-->
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="column" style="background-color:#a8b6bd30;">
+                    <h3><a href="/resume.html"><i class="fa fa-user"></i> Resume / CV</a></h3>
+                    <p>Here you can find detailed information about me, my background, my skills and my achievements</p>
                 </div>
-            </section><!--//section-->
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Publications</h2>
-                <div class="details">
-                    <ul style="list-style-type:square;">
-                        <li> Conditional Neural Movement Primitives <br> <i><b>M.Y. Seker</b>, M. Imre, J. Piater, E. Ugur</i> <br> Robotics Science and Systems, <b>RSS 2019</b></li>
-                        <br>
-                        <li> Deep Effect Trajectory Prediction in Robot Manipulation <br> <i><b>M.Y. Seker</b>, A.E. Tekden, E. Ugur</i> <br> Robotics and Autonomous Systems, <b>RAS 2019</b></li>
-                        <br>
-                        <li> Action - Effect Prediction Using Shape Context <br> <i><b>M.Y. Seker</b>, E. Cagirici, E. Ugur</i> <br> Turkish Robotics Conference, <b>ToRK 2018 (Best Paper Nominee)</b></li>
-                    </ul>
-                </div><!--//details-->
-            </section><!--//skills-section-->
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-star"></i>Computer Skills</h2>
-                <div class="details"><b>Languages:</b> Python, MatLab, Lua, C, C++, Java, Prolog, MySQL, Perl, LISP</div><!--//details-->
-                <div class="details"><b>Frameworks:</b> ROS, Keras, Tensorflow, V-REP, Gazebo, Swing, lejOS, Android SDK, Spring</div><!--//details-->
-            </section><!--//skills-section-->
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-thumbs-o-up"></i>Awards</h2>
-                <div class="details">
-                    <ul style="list-style-type:square;">
-                        <li><b>Best Poster Award</b> Turkish Robotics Conference, ToRK 2019</li>
-                        <li><b>Best Paper Nominee</b> Best Paper Contest, Turkish Robotics Conference, ToRK 2018</li>
-                        <li><b>Best Project Award</b> Bogazici University Graduation Project Competition, Istanbul, Turkey, 2017</li>
-                        <li><b>First Prize</b> B/S/H Big Data Mining Hackathon, Istanbul, Turkey, 2017</li>
-                        <li><b>Finalist</b> TUBITAK Software Project Competition for Undergraduate Students, Ankara, Turkey, 2016</li>
-                        <li><b>Dean's Honor List</b> Bogazici University, Istanbul, Turkey, 2013-2017</li>
-                        <li><b>Tubitak Science Scholarship</b> TUBITAK (Scientific and Technological Research Council of Turkey), 2012-2017</li>
-                        <li><b>Bronze Medal</b> International Zhautykov Olympiads, IZhO Committee, Kazakhstan, 2011</li>
-                        <li><b>Bronze Medal</b> TUBITAK National Olympiads in Informatics, Ankara, Turkey, 2011</li>
-                        <li><b>Silver Medal</b> Istanbul Science Olympiads in Informatics Finals, Istanbul, Turkey, 2011</li>
-                    </ul>
-                </div><!--//details-->
-            </section><!--//skills-section-->
-            <section class="section projects-section">
-                <h2 class="section-title"><i class="fa fa-puzzle-piece"></i>Projects</h2>
-                <div class="intro">
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Project Avatar, Teleoperating NAO Robot</h3>
-                            </div><!--//upper-row-->
-                            <div class="company"><b>Winner Project for Bogazici University 2017 Graduation Project Competition</b></div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            </br>
-                            <ul>
-                                <li>Aim is to tele-operate a NAO robot in real time using Kinect motion sensor and VR glasses to investigate the body schema adaptation in humans in response to changes in their embodiment</li>
-                                <li>Video:</li>
-                            </ul>
-                            <iframe style="padding-left: 40px" width="350" height="250" src="https://www.youtube.com/embed/LZD0s43UvNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div><!--//details-->
-                    </div><!--//item-->
-                    <hr>
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Will you solve my Question?</h3>
-                            </div><!--//upper-row-->
-                            <div class="company"><b>Finalist Project for Tubitak National Software Project Competition</b></div>
-                        </div><!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Android app for question-solving based on microvolunteering to help students</li>
-                            </ul>
-                        </div><!--//details-->
-                    </div><!--//item-->
-                    <hr>
-                    <div class="item">
-                        <div class="meta">
-                            <div class="upper-row">
-                                <h3 class="job-title">Find My Beacon</h3>
-                            </div><!--//upper-row-->
-                        </div><!--//meta-->
-                        <div class="details">
-                            <ul>
-                                <li>Android app to track your pets or objects with Bluetooth Beacons</li>
-                            </ul>
-                        </div><!--//details-->
-                    </div><!--//item-->
+                <div class="column" style="background-color:#a8b6bd30;">
+                    <h3><a href="/publications.html"><i class="fa fa-rocket"></i> Publications</a></h3>
+                    <p>Here you can find my publications, their videos and github links</p>
                 </div>
-            </section><!--//section-->
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="column" style="background-color:#a8b6bd30;">
+                    <h3><a href="/videos.html"><i class="fa fa-video-camera"></i> Project Videos</a></h3>
+                    <p>Here you can watch my videos about research projects and robotics courses.</p>
+                </div>
+                <div class="column" style="background-color:#a8b6bd30;">
+                    <h3><a href="/fun.html"><i class="fa fa-star"></i> Fun</a></h3>
+                    <p>Side projects with GANs, video game edits, and ukulele, and anything besides serious research</p>
+                </div>
+            </div>
+            <br>
+            <br>
         </div><!--//main-body-->
     </div>
     <footer class="footer">

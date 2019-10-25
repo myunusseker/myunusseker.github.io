@@ -54,7 +54,7 @@ p {
 .sidebar-wrapper {
   background: #42A8C0;
   position: absolute;
-  right: 0;
+  left: 0;
   width: 288px;
   height: 100%;
   min-height: 800px;
@@ -155,7 +155,7 @@ p {
 .main-wrapper {
   background: #fff;
   padding: 40px;
-  padding-right: 330px;
+  padding-left: 330px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;

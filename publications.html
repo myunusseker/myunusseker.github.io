@@ -43,9 +43,7 @@
     /* Create four equal columns */
     .column {
       flex: 25%;
-      margin-right: 30px;
       padding: 20px;
-      padding-bottom: 100px;
     }
 
     /* On screens that are 992px wide or less, go from four columns to two columns */
@@ -61,8 +59,9 @@
         flex-direction: column;
       }
     }
-    .border-right {
-        border-right: 1px solid #eee;
+
+    .no-video {
+        width: 100%;
     }
     </style>
 </head> 
@@ -80,7 +79,7 @@
                 <i class="fa fa-envelope"></i> <a href="mailto: yourname@email.com">m.yunusseker@gmail.com</a>
                 <br>
                 <i class="fa fa-phone"></i> <a href="tel:0123 456 789">90 506 621 24 24</a>
-                <br><br>
+                                <br><br>
                 <a href="https://www.github.com/myunusseker"><i class="fa fa-github"></i> Github </a>
                 
                 <a href="https://www.youtube.com/channel/UCnuNv6Z6zWkpcDnvn17-irg"><i class="fa fa-youtube"></i> Youtube </a>
@@ -102,43 +101,53 @@
         </div><!--//sidebar-wrapper-->
         
         <div class="main-wrapper">
-            
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>About Me</h2>
-                <div class="summary">
-                    <p>
-                        Hi, currently I am pursuing my Msc. Degree in <a href="https://cmpe.boun.edu.tr/"> Dept. of Computer Engineering</a>, <a href="http://www.boun.edu.tr/">Bogazici University</a>, Turkey. I am working under the supervision of Professor <a href="https://cmpe.boun.edu.tr/~emre/index.html"> Emre Ugur</a>. </br><br> My research aim is to develop and enhance advanced methods for Robot Learning (affordance learning, action-effect prediction, learning from demonstration, symbolic learning and planning) using deep neural networks and other state-of-the-art methods.
-                    </p>
-                </div><!--//summary-->
-            </section><!--//section-->
-            <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="column" style="background-color:#a8b6bd30;">
-                    <h3><a href="/resume.html"><i class="fa fa-user"></i> Resume / CV</a></h3>
-                    <p>Here you can find detailed information about me, my background, my skills and my achievements</p>
-                </div>
-                <div class="column" style="background-color:#a8b6bd30;">
-                    <h3><a href="/publications.html"><i class="fa fa-rocket"></i> Publications</a></h3>
-                    <p>Here you can find my publications, their videos and github links</p>
-                </div>
-            </div>
-            <br>
-            <hr>
-            <br>
-            <div class="row">
-                <div class="column" style="background-color:#a8b6bd30;">
-                    <h3><a href="/videos.html"><i class="fa fa-video-camera"></i> Project Videos</a></h3>
-                    <p>Here you can watch my videos about research projects and robotics courses.</p>
-                </div>
-                <div class="column" style="background-color:#a8b6bd30;">
-                    <h3><a href="/fun.html"><i class="fa fa-star"></i> Fun</a></h3>
-                    <p>Side projects with GANs, video game edits, and ukulele, and anything besides serious research</p>
-                </div>
-            </div>
-            <br>
-            <br>
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>Publications</h2>
+                <div class="details">
+                    <div class="row">
+                        <div class="column">
+                            <ul style="list-style-type:square;">
+                                <li> Conditional Neural Movement Primitives 
+                                    <br> <i><b>M.Y. Seker</b>, M. Imre, J. Piater, E. Ugur</i> 
+                                    <br> Robotics Science and Systems, <b>RSS 2019</b> 
+                                    <br><br> <a href="http://www.roboticsproceedings.org/rss15/p71.pdf"><i class="fa fa-newspaper-o"></i> Paper Link</a> 
+                                    <br> <a href="https://github.com/myunusseker/CNMP"><i class="fa fa-github"></i> Github Link</a></li>    
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <iframe style="margin-left: 20px" width="300" height="200" src="https://www.youtube.com/embed/cPKOIaf0mUc?rel=0 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="column">
+                            <ul style="list-style-type:square;">
+                                <li> Deep Effect Trajectory Prediction in Robot Manipulation 
+                                    <br> <i><b>M.Y. Seker</b>, A.E. Tekden, E. Ugur</i> 
+                                    <br> Robotics and Autonomous Systems, <b>RAS 2019</b> 
+                                    <br><br> <a href="https://www.sciencedirect.com/science/article/pii/S0921889019300740"><i class="fa fa-newspaper-o"></i> Paper Link</a>
+                                    <br> <a href="https://github.com/Fzaero/Deep-Effect-Trajectory-Prediction-in-Robot-Manipulation"><i class="fa fa-github"></i> Github Link</a></li>    
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <iframe style="margin-left: 20px" width="300" height="200" src="https://www.youtube.com/embed/dFPOH1C3DeY?rel=0 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="column no-video">
+                            <ul style="list-style-type:square;">
+                                <li> Action - Effect Prediction Using Shape Context 
+                                    <br> <i><b>M.Y. Seker</b>, E. Cagirici, E. Ugur</i> 
+                                    <br> Turkish Robotics Conference, <b>ToRK 2018 (Best Paper Nominee)</b>  
+                                    <br><br> <a href="https://drive.google.com/file/d/1NLhmY9GD1XNCez_7gqfVUeSagpLXEXdQ/view"><i class="fa fa-newspaper-o"></i> Paper Link 
+                                    <br> <a href="https://www.cmpe.boun.edu.tr/~emre/papers/Seker-2018-TORK.pdf"><i class="fa fa-newspaper-o"></i> Paper Link (Turkish)</a></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                </div><!--//details-->
+            </section><!--//skills-section-->
         </div><!--//main-body-->
     </div>
     <footer class="footer">
