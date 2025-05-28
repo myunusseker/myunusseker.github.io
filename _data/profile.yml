@@ -1,18 +1,16 @@
-primary_name: "Your Name"
+primary_name: "M. Yunus Seker"
 secondary_name: ""
-navbar_name: "Your Name"
+navbar_name: "M. Yunus Seker"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/CMU.png  # Logo is optional
+  name: PhD Student at Carnegie Mellon University, The Robotics Institute
 
-
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+# cv_link: /
+gscholar: H8NkqvQAAAAJ  # This is an example, replace it with your own Google Scholar ID
+github: myunusseker
+twitter: myunusseker # Do not include the '@' symbol
+email: "mseker@andrew.cmu.edu"
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -22,40 +20,78 @@ twitter: your_twitter_id  # Do not include the '@' symbol
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Hi! I’m a Ph.D. student at <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute, 
+    Carnegie Mellon University</a>, where I’m fortunate to be advised by <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/" target="_blank">Prof. Oliver Kroemer</a>.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    My research focuses on building intelligent robotic systems that can <strong>learn complex skills and generalize them to new environments with zero to minimal supervision</strong>. I develop algorithms for <strong>robot learning</strong>, with an emphasis on <em>skill acquisition and transfer</em>, <em>action-effect prediction</em>, <em>affordance understanding</em>, and <em>learning from demonstration</em>. I'm particularly interested in combining <strong>robot manipulation</strong> with <em>deep learning</em>, <em>perception</em>, <em>foundational models</em>, <em>LLM/VLMs</em>, <em>symbolic reasoning</em> and <em>data-efficient optimization techniques</em> to enable robots to adapt quickly and robustly to real-world scenarios.
+  </p>
+  <p>
+    Ultimately, my goal is to bridge the gap between low-level control and high-level reasoning—empowering robots to understand, plan, and act in ways that are as versatile and intuitive as humans.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/im1.jpeg
 portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: Carnegie Mellon University
+  logo: /assets/images/badges/CMU.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
+    The Robotics Institute, School of Computer Science <br/>
     Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+  date: Sep. 2022 - present
+- name: Bogazici University
+  logo: /assets/images/badges/boun.png
+  position: >-
+    MSc and BSc in Computer Science <br/>
+    Istanbul, Turkiye
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+ - name: Teaching Assistant, CMU
+   logo: /assets/images/badges/CMU.png
+   position: Carnegie Mellon University
+   date: 2024 - 2025
+ - name: Research Assistant, CMU
+   logo: /assets/images/badges/CMU.png
+   position: Intelligent Autonomous Manipulation Lab (<a href="https://iamlab-cmu.github.io/">IAM LAB</a>)
+   date: 2022 - present
+ - name: Research Assistant Intern, University of Tokyo
+   logo: /assets/images/badges/tokyo.png
+   position: Cognitive Developmental Robotics Lab (<a href="https://developmental-robotics.jp/en/home/">Nagai LAB</a>)
+   date: 2020
+ - name: Teaching Assistant, Bogazici University
+   logo: /assets/images/badges/boun.png
+   position: Bogazici University
+   date: 2019 - 2020
+ - name: Research Assistant, Bogazici University
+   logo: /assets/images/badges/boun.png
+   position: Cognition, Learning and Robotics Lab (<a href="https://colors.cmpe.boun.edu.tr/">Colors LAB</a>)
+   date: 2017 - 2022
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+
+work:
+- name: Spiky AI
+  position: Lead ML Research Engineer
+  logo: /assets/images/badges/spiky.jpg
+  date: 2020-2022
+
+projects:
+ - name: Project 1
+   logo: /assets/images/badges/CMU.png
+   position: >- 
+    Carnegie Mellon University <br/>
+    Our.
+   date: 2024 - 2025
+ - name: Project 2
+   logo: /assets/images/badges/CMU.png
+   position: Research Intern
+   date: Sep. 2019 - Jul. 2021
+ - name: Project 3
+   logo: /assets/images/badges/CMU.png
+   position: Research Intern
+   date: Sep. 2019 - Jul. 2021
+ - name: Project 4
+   logo: /assets/images/badges/CMU.png
+   position: Research Intern
+   date: Sep. 2019 - Jul. 2021
