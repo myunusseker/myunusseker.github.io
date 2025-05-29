@@ -10,7 +10,6 @@ images:
   link: https://picsum.photos/
 - src: https://picsum.photos/seed/second22/800/800
   title: Photo 2
-  desc: Description 2
 - src: https://picsum.photos/seed/third33/800/800
 ---
 

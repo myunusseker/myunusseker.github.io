@@ -19,16 +19,39 @@ email: "mseker@andrew.cmu.edu"
 
 short_bio_text_justify: false
 short_bio: >-
-  <p>
-    Hi! I’m a Ph.D. student at <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute, 
-    Carnegie Mellon University</a>, where I’m fortunate to be advised by <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/" target="_blank">Prof. Oliver Kroemer</a>.
-  </p>
-  <p>
-    My research focuses on building intelligent robotic systems that can <strong>learn complex skills and generalize them to new environments with zero to minimal supervision</strong>. I develop algorithms for <strong>robot learning</strong>, with an emphasis on <em>skill acquisition and transfer</em>, <em>action-effect prediction</em>, <em>affordance understanding</em>, and <em>learning from demonstration</em>. I'm particularly interested in combining <strong>robot manipulation</strong> with <em>deep learning</em>, <em>perception</em>, <em>foundational models</em>, <em>LLM/VLMs</em>, <em>symbolic reasoning</em> and <em>data-efficient optimization techniques</em> to enable robots to adapt quickly and robustly to real-world scenarios.
-  </p>
-  <p>
-    Ultimately, my goal is to bridge the gap between low-level control and high-level reasoning—empowering robots to understand, plan, and act in ways that are as versatile and intuitive as humans.
-  </p>
+  <div>
+    <!-- Desktop / Wide View -->
+    <div class="d-none d-md-block">
+      <p>
+        Hi! I’m a Ph.D. student at <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute, 
+        Carnegie Mellon University</a>, where I’m fortunate to be advised by 
+        <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/" target="_blank">Prof. Oliver Kroemer</a>.
+      </p>
+      <p>
+        My research focuses on building intelligent robotic systems that can <strong>learn complex skills and generalize them to new environments with zero to minimal supervision</strong>. 
+        I develop algorithms for <code>robot learning</code>, with an emphasis on <strong>skill acquisition and transfer</strong>, 
+        <strong>action-effect prediction</strong>, <strong>affordance understanding</strong>, and <strong>learning from demonstration</strong>. 
+        I'm particularly interested in combining <code>robot manipulation</code> with <strong>deep learning</strong>, 
+        <strong>perception</strong>, <strong>foundational models</strong>, <strong>LLM/VLMs</strong>, 
+        <strong>symbolic reasoning</strong> and <strong>data-efficient optimization techniques</strong> to enable robots to adapt quickly and robustly to real-world scenarios.
+      </p>
+      <p>
+        Ultimately, my goal is to bridge the gap between low-level control and high-level reasoning—
+        empowering robots to understand, plan, and act in ways that are as versatile and intuitive as humans.
+      </p>
+    </div>
+
+    <!-- Mobile / Narrow View -->
+    <div class="d-md-none">
+      <p>
+        Hi! I am a Ph.D. student at <a href="https://www.ri.cmu.edu/" target="_blank">The Robotics Institute, Carnegie Mellon University</a> working with 
+        <a href="https://www.ri.cmu.edu/ri-faculty/oliver-kroemer/" target="_blank">Prof. Oliver Kroemer</a>. I focus on <strong>robot learning</strong>, 
+        including <strong>skill transfer</strong>, <strong>affordances</strong>, and 
+        <strong>foundational models</strong> for intelligent manipulation. My goal is to help robots learn complex tasks 
+        with <strong>minimal supervision</strong> and generalize them to new scenarios.
+      </p>
+    </div>
+  </div>
 
 portrait_url: /assets/images/photos/im1.jpeg
 portrait_caption: >-
@@ -79,42 +102,65 @@ work:
 projects:
  - name: ARM/MFI - Grounded Task-Axis Skills for Generalizable Robot Manipulation
    logo: /assets/images/badges/arm.png
-   position: >-   
-    <p>
+   position: >-
+    <div>
+    <!-- Desktop / Wide View -->
+    <div class="d-none d-md-block">
+      <p>
+        <span style="font-size: 0.9rem;">
+          This project introduces <strong>Grounded Task-Axes (GTA)</strong>, a novel framework for enabling zero-shot robotic skill transfer by modularizing robot actions into interpretable and reusable low-level controllers. Each controller is grounded using object-centric <em>keypoints and axes</em>, allowing robots to align and execute skills across novel tools and scenes without any training.
+        </span>
+      </p>
+      <ul style="font-size: 0.9rem;">
+        <li>
+          <strong>Modular Controller Design:</strong> Skills like screwing, wiping, and inserting are composed from prioritized task-axis controllers (e.g., <em>PosAlign, AxisAlign, ForceSlide</em>) that operate within each other's nullspaces.
+        </li>
+        <li>
+          <strong>Visual Foundation Models:</strong> To generalize across objects, we use foundation models (e.g., DINOv2, SAM) to find semantic and geometric correspondences between keypoints on example and current objects.
+        </li>
+        <li>
+          <strong>Skill Composition for Manufacturing:</strong> In the MFI-ARM project, we use these skills in the context of the NIST assembly box task, defining lifted skills using abstract axes and grounding them for unseen CADs or image inputs, making the system scalable to new tasks and tools.
+        </li>
+      </ul>
+
+      <p>
+        <span style="font-size: 0.9rem;">
+          This project bridges traditional control theory with modern visual reasoning, offering <strong>interpretable, adaptable, and sample-efficient (zero-shot) skill transfer</strong> for real-world manufacturing and manipulation tasks.
+        </span>
+      </p>
+    </div>
+
+    <!-- Mobile / Narrow View -->
+    <div class="d-md-none">
       <span style="font-size: 0.9rem;">
-        This project introduces <strong>Grounded Task-Axes (GTA)</strong>, a novel framework for enabling zero-shot robotic skill transfer by modularizing robot actions into interpretable and reusable low-level controllers. Each controller is grounded using object-centric <em>keypoints and axes</em>, allowing robots to align and execute skills across novel tools and scenes without any training.
+        This project introduces <strong>Grounded Task-Axes (GTA)</strong>, a zero-shot skill transfer framework that enables robots to generalize manipulation skills across novel tools using visual foundation models and modular task-axis controllers.
       </span>
-    </p>
-    
-    <ul style="font-size: 0.9rem;">
-      <li>
-        <strong>Modular Controller Design:</strong> Skills like screwing, wiping, and inserting are composed from prioritized task-axis controllers (e.g., <em>PosAlign, AxisAlign, ForceSlide</em>) that operate within each other's nullspaces.
-      </li>
-      <li>
-        <strong>Visual Foundation Models:</strong> To generalize across objects, we use foundation models (e.g., DINOv2, SAM) to find semantic and geometric correspondences between keypoints on example and current objects.
-      </li>
-      <li>
-        <strong>Skill Composition for Manufacturing:</strong> In the MFI-ARM project, we use these skills in the context of the NIST assembly box task, defining lifted skills using abstract axes and grounding them for unseen CADs or image inputs, making the system scalable to new tasks and tools.
-      </li>
-    </ul>
-    
-    <p>
-      <span style="font-size: 0.9rem;">
-        This project bridges traditional control theory with modern visual reasoning, offering <strong>interpretable, adaptable, and sample-efficient (zero-shot) skill transfer</strong> for real-world manufacturing and manipulation tasks.
-      </span>
-    </p>
+    </div>
+    </div>
    date: Jan. 2024 - Ongoing
  - name: Sony AI - Precise Food Manipulation
    logo: /assets/images/badges/sony.png
    position: >-
-    <span style="font-size: 0.9rem;"> This project tackled the challenge of <strong>precise food manipulation and plating</strong>, requiring robots to interact with deformable and rigid foods with high accuracy. It had two main components: <br/>
-    <ul style="font-size: 0.9rem;">
-      <li>
-        <strong>Material Property Estimation:</strong> We proposed a <em>Bayesian optimization framework (Sum-GP-UCB)</em> to estimate material properties (e.g., mass, stiffness, Poisson ratio) from real-world interaction scenes. By modeling each observation independently and supporting partial reward evaluations, our method achieved faster, more efficient convergence.
-      </li>
-      <li>
-        <strong>Multi-Model Planning for Plating:</strong> We built a system that selects among <em>heuristic, learned, and simulation-based predictive models</em> to optimize placement actions. Using <em>Model Deviation Estimators (MDEs)</em>, the robot could dynamically switch models based on prediction reliability. We introduced <em>sim-to-sim MDEs</em> to pretrain with synthetic data and efficiently adapted them to the real world through finetuning.
-      </li>
-    </ul>
-    </span>
+      <div>
+        <!-- Desktop / Wide View -->
+        <div class="d-none d-md-block">
+          <span style="font-size: 0.9rem;"> This project tackled the challenge of <strong>precise food manipulation and plating</strong>, requiring robots to interact with deformable and rigid foods with high accuracy. It had two main components: <br/>
+          <ul style="font-size: 0.9rem;">
+            <li>
+              <strong>Material Property Estimation:</strong> We proposed a <em>Bayesian optimization framework (Sum-GP-UCB)</em> to estimate material properties (e.g., mass, stiffness, Poisson ratio) from real-world interaction scenes.
+            </li>
+            <li>
+              <strong>Multi-Model Planning for Plating:</strong> We built a system that switches among <em>heuristic, learned, and simulation-based predictive models</em> to optimize placement actions using <em>Model Deviation Estimators (MDEs)</em>.
+            </li>
+          </ul>
+          </span>
+        </div>
+    
+        <!-- Mobile / Narrow View -->
+        <div class="d-md-none">
+          <span style="font-size: 0.9rem;">
+            This project with <strong>Sony AI</strong> developed a multi-modal planning system and used <em>Bayesian optimization</em> to help robots perform precise plating and food manipulation tasks.
+          </span>
+        </div>
+      </div>
    date: Aug. 2022 - Jan 2024
