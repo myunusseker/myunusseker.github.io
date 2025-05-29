@@ -351,49 +351,52 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
                             <ul class="list-unstyled mb-1">
                                 
                                 <li class="media mb-1">
-                                    <img src="/assets/images/badges/CMU.png" alt="Project 1" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="/assets/images/badges/arm.png" alt="ARM/MFI - Grounded Task-Axis Skills for Generalizable Robot Manipulation" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
-                                        <div>Project 1</div>
+                                        <div>ARM/MFI - Grounded Task-Axis Skills for Generalizable Robot Manipulation</div>
                                         <div class="small"></div>
                                         <div class="small d-flex">
-                                            <div>Carnegie Mellon University <br/> Our.</div>
-                                            <div class="mt-auto ml-auto no-break"><em>2024 - 2025</em></div>
+                                            <div><p>
+  <span style="font-size: 0.9rem;">
+    This project introduces <strong>Grounded Task-Axes (GTA)</strong>, a novel framework for enabling zero-shot robotic skill transfer by modularizing robot actions into interpretable and reusable low-level controllers. Each controller is grounded using object-centric <em>keypoints and axes</em>, allowing robots to align and execute skills across novel tools and scenes without any training.
+  </span>
+</p>
+<ul style="font-size: 0.9rem;">
+  <li>
+    <strong>Modular Controller Design:</strong> Skills like screwing, wiping, and inserting are composed from prioritized task-axis controllers (e.g., <em>PosAlign, AxisAlign, ForceSlide</em>) that operate within each other's nullspaces.
+  </li>
+  <li>
+    <strong>Visual Foundation Models:</strong> To generalize across objects, we use foundation models (e.g., DINOv2, SAM) to find semantic and geometric correspondences between keypoints on example and current objects.
+  </li>
+  <li>
+    <strong>Skill Composition for Manufacturing:</strong> In the MFI-ARM project, we use these skills in the context of the NIST assembly box task, defining lifted skills using abstract axes and grounding them for unseen CADs or image inputs, making the system scalable to new tasks and tools.
+  </li>
+</ul>
+<p>
+  <span style="font-size: 0.9rem;">
+    This project bridges traditional control theory with modern visual reasoning, offering <strong>interpretable, adaptable, and sample-efficient (zero-shot) skill transfer</strong> for real-world manufacturing and manipulation tasks.
+  </span>
+</p></div>
+                                            <div class="mt-auto ml-auto no-break"><em>Jan. 2024 - Ongoing</em></div>
                                         </div>
                                     </div>
                                 </li>
                                 
                                 <li class="media mb-1">
-                                    <img src="/assets/images/badges/CMU.png" alt="Project 2" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="/assets/images/badges/sony.png" alt="Sony AI - Precise Food Manipulation" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
-                                        <div>Project 2</div>
+                                        <div>Sony AI - Precise Food Manipulation</div>
                                         <div class="small"></div>
                                         <div class="small d-flex">
-                                            <div>Research Intern</div>
-                                            <div class="mt-auto ml-auto no-break"><em>Sep. 2019 - Jul. 2021</em></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                <li class="media mb-1">
-                                    <img src="/assets/images/badges/CMU.png" alt="Project 3" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <div>Project 3</div>
-                                        <div class="small"></div>
-                                        <div class="small d-flex">
-                                            <div>Research Intern</div>
-                                            <div class="mt-auto ml-auto no-break"><em>Sep. 2019 - Jul. 2021</em></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                <li class="media mb-1">
-                                    <img src="/assets/images/badges/CMU.png" alt="Project 4" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <div>Project 4</div>
-                                        <div class="small"></div>
-                                        <div class="small d-flex">
-                                            <div>Research Intern</div>
-                                            <div class="mt-auto ml-auto no-break"><em>Sep. 2019 - Jul. 2021</em></div>
+                                            <div><span style="font-size: 0.9rem;"> This project tackled the challenge of <strong>precise food manipulation and plating</strong>, requiring robots to interact with deformable and rigid foods with high accuracy. It had two main components: <br/> <ul style="font-size: 0.9rem;">
+  <li>
+    <strong>Material Property Estimation:</strong> We proposed a <em>Bayesian optimization framework (Sum-GP-UCB)</em> to estimate material properties (e.g., mass, stiffness, Poisson ratio) from real-world interaction scenes. By modeling each observation independently and supporting partial reward evaluations, our method achieved faster, more efficient convergence.
+  </li>
+  <li>
+    <strong>Multi-Model Planning for Plating:</strong> We built a system that selects among <em>heuristic, learned, and simulation-based predictive models</em> to optimize placement actions. Using <em>Model Deviation Estimators (MDEs)</em>, the robot could dynamically switch models based on prediction reliability. We introduced <em>sim-to-sim MDEs</em> to pretrain with synthetic data and efficiently adapted them to the real world through finetuning.
+  </li>
+</ul> </span></div>
+                                            <div class="mt-auto ml-auto no-break"><em>Aug. 2022 - Jan 2024</em></div>
                                         </div>
                                     </div>
                                 </li>
@@ -421,22 +424,25 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
         
         <div class="media py-1 ">
             
+            <div class="mr-3 text-muted my-1">2025</div>
+            <div class="media-body">
+                
+                <div class="my-1 d-flex">
+                    <div>New preprint uploaded: Grounded Task Axes: Zero-Shot Semantic Skill Generalization via Task-Axis Controllers and Visual Foundation Models – available on <a href="https://iamlab-cmu.github.io/GTA/">arXiv</a>! <span class="badge badge-pill badge-info">Preprint</span></div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>May 15</i></div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="media py-1 border-top border-gray">
+            
             <div class="mr-3 text-muted my-1">2024</div>
             <div class="media-body">
                 
                 <div class="my-1 d-flex">
-                    <div>AI Transforms Music Industry: <strong>First AI-Composed Symphony</strong> Debuts in New York</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Oct 18</i></div>
-                </div>
-                
-                <div class="my-1 d-flex">
-                    <div>Virtual Reality Theme Park Opens, Redefining Entertainment Industry</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Mar 22</i></div>
-                </div>
-                
-                <div class="my-1 d-flex">
-                    <div>First Human Settlement Established on Mars, Marking New Era of Space Exploration. <a href="https://google.com" target="_blank">Read more <i class="fas fa-angle-double-right"></i></a></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Jan 30</i></div>
+                    <div>Our paper Leveraging Simulation-Based Model Preconditions for Fast Action Parameter Optimization with Multiple Models is accepted for IROS 2024! <span class="badge badge-pill badge-success">Accepted</span></div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>May 28</i></div>
                 </div>
                 
             </div>
@@ -448,13 +454,8 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             <div class="media-body">
                 
                 <div class="my-1 d-flex">
-                    <div>Scientists Discover New Species of Bioluminescent Fish in Mariana Trench</div>
+                    <div>Our paper Estimating material properties of interacting objects using Sum-GP-UCB is accepted for ICRA 2024! <span class="badge badge-pill badge-success">Accepted</span></div>
                     <div class="ml-auto mt-auto text-muted no-break"><i>Nov 28</i></div>
-                </div>
-                
-                <div class="my-1 d-flex">
-                    <div>AI-Powered Robot Chef Wins International Culinary Competition <span class="badge badge-pill badge-info">Featured</span></div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Sep 05</i></div>
                 </div>
                 
             </div>
@@ -466,8 +467,8 @@ document.querySelectorAll(".root-path-text").forEach(function(element){
             <div class="media-body">
                 
                 <div class="my-1 d-flex">
-                    <div>Lorem ipsum sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
-                    <div class="ml-auto mt-auto text-muted no-break"><i>Jan 11</i></div>
+                    <div>Joined the <a href="https://iamlab-cmu.github.io/">IAM LAB</a> at CMU as a Ph.D. student focused on robot learning for manipulation.</div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>Sep 10</i></div>
                 </div>
                 
             </div>
