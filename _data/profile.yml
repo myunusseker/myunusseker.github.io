@@ -55,7 +55,7 @@ short_bio: >-
 
 portrait_url: /assets/images/photos/im1.jpeg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  Newell-Simon Hall, The Robotics Institute, Carnegie Mellon University
 
 education:
 - name: Carnegie Mellon University
@@ -71,22 +71,22 @@ education:
     Istanbul, Turkiye
 
 experience:
- - name: Teaching Assistant, CMU
-   logo: /assets/images/badges/CMU.png
-   position: Carnegie Mellon University
-   date: 2024 - 2025
  - name: Research Assistant, CMU
    logo: /assets/images/badges/CMU.png
    position: Intelligent Autonomous Manipulation Lab (<a href="https://iamlab-cmu.github.io/">IAM LAB</a>)
    date: 2022 - present
+ - name: Teaching Assistant
+   logo: /assets/images/badges/CMU.png
+   position: >-
+    Carnegie Mellon University </br>
+    Bogazici University
+   date: >-
+    2024 - 2025 </br>
+    2019 - 2020
  - name: Research Assistant Intern, University of Tokyo
    logo: /assets/images/badges/tokyo.png
    position: Cognitive Developmental Robotics Lab (<a href="https://developmental-robotics.jp/en/home/">Nagai LAB</a>)
    date: 2020
- - name: Teaching Assistant, Bogazici University
-   logo: /assets/images/badges/boun.png
-   position: Bogazici University
-   date: 2019 - 2020
  - name: Research Assistant, Bogazici University
    logo: /assets/images/badges/boun.png
    position: Cognition, Learning and Robotics Lab (<a href="https://colors.cmpe.boun.edu.tr/">Colors LAB</a>)
