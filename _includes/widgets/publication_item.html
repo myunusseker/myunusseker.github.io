@@ -21,10 +21,12 @@
                 {% endfor %}
             </p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
-            
-
-
+            <div class="abstract-toggle-container mt-0 mb-0 small text-muted">
+              <div class="abstract-content collapsed">
+                {{ item.abstract }}
+              </div>
+              <a href="javascript:void(0);" class="toggle-abstract-link" onclick="toggleCollapse(this)">Show more »</a>
+            </div>
         </div>
     </div>
 </div>
@@ -46,9 +48,42 @@
                     {% endfor %}
                 </p>
                 <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
-                <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+                <div class="abstract-toggle-container mt-0 mb-0 small text-muted">
+                  <div class="abstract-content collapsed">
+                    {{ item.abstract }}
+                  </div>
+                  <a href="javascript:void(0);" class="toggle-abstract-link" onclick="toggleCollapse(this)">Show more »</a>
+                </div>
             </div>
         </div>
     </div>
 
 </div>
+
+<style>
+.abstract-content {
+  line-height: 1.5em;
+  max-height: calc(1.2em * 5); /* Show 3 lines */
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.abstract-content.expanded {
+  max-height: 1000px; /* Arbitrary large value for full text */
+}
+.toggle-abstract-link {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: #007bff;
+  font-weight: 500;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function toggleCollapse(link) {
+  const container = link.closest('.abstract-toggle-container');
+  const content = container.querySelector('.abstract-content');
+  const expanded = content.classList.toggle('expanded');
+  link.textContent = expanded ? 'Show less «' : 'Show more »';
+}
+</script>
