@@ -1,0 +1,81 @@
+---
+layout: default
+title : About Me
+navbar_title: About Me
+container_class: container-xl
+---
+
+{% assign cards_by_group = site.about | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
+
+{% for group in cards_by_group %}
+<h1>{{ group.name }}</h1>
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    {% for item in group.items %}
+    {% if item.width >= 4 -%}
+        {%- assign width_sm = 12 -%}
+        {%- assign width_xs = 12 -%}
+    {%- elsif item.width >= 2 -%}
+        {%- assign width_sm = 6 -%}
+        {%- assign width_xs = 6 -%}
+    {%- else -%}
+        {%- assign width_sm = item.width | times: 2 | at_most: 12 -%}
+        {%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
+    {%- endif -%}
+    <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
+        <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
+            {{ item.content }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+<script>
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.setAttribute('draggable', 'false');
+      img.style.userDrag = 'none';
+      img.style.webkitUserDrag = 'none';
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('img');
+
+    images.forEach(img => {
+      // Create a wrapper div
+      const wrapper = document.createElement('div');
+      wrapper.style.position = 'relative';
+      wrapper.style.display = 'inline-block';
+
+      // Clone the original image
+      const clone = img.cloneNode(true);
+      clone.setAttribute('draggable', 'false');
+      clone.style.pointerEvents = 'none';
+      clone.style.userDrag = 'none';
+      clone.style.webkitUserDrag = 'none';
+
+      // Create a transparent overlay div
+      const overlay = document.createElement('div');
+      overlay.style.position = 'absolute';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.right = '0';
+      overlay.style.bottom = '0';
+      overlay.style.zIndex = '10';
+
+      // Replace original image with wrapped version
+      img.parentNode.insertBefore(wrapper, img);
+      wrapper.appendChild(clone);
+      wrapper.appendChild(overlay);
+      img.remove();
+    });
+  });
+</script>

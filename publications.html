@@ -1,196 +1,32 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
-<head>
-    <title>M. Yunus Seker</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="M. Yunus Seker">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">     
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-    * {
-      box-sizing: border-box;
-    }
+---
+layout: default
+title : Publications
+navbar_title: Publications
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
 
-    /* Create two equal columns that floats next to each other */
-    <style>
-    * {
-      box-sizing: border-box;
-    }
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-    /* Container for flexboxes */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    /* Create four equal columns */
-    .column {
-      flex: 25%;
-      padding: 20px;
-    }
-
-    /* On screens that are 992px wide or less, go from four columns to two columns */
-    @media screen and (max-width: 992px) {
-      .column {
-        flex: 50%;
-      }
-    }
-
-    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .row {
-        flex-direction: column;
-      }
-    }
-
-    .no-video {
-        width: 100%;
-    }
-    </style>
-</head> 
-
-<body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <img class="profile" src="assets/img-profile.jpg" alt="" />
-                <h1 class="name">M. Yunus Seker</h1>
-                <h3 class="tagline">PhD Student</h3>
-                </br>
-                <i class="fa fa-envelope"></i> <a href="mailto: yourname@email.com">mseker@andrew.cmu.edu</a>
-                <br>
-                <i class="fa fa-envelope"></i> <a href="mailto: yourname@email.com">m.yunusseker@gmail.com</a>
-                <br><br>
-                <a href="https://scholar.google.com/citations?user=H8NkqvQAAAAJ&hl=en"><i class="fa fa-google"></i> Scholar </a>
-                <br>
-                <a href="https://www.github.com/myunusseker"><i class="fa fa-github"></i> Github </a>
-                
-                <a href="https://www.youtube.com/channel/UCnuNv6Z6zWkpcDnvn17-irg"><i class="fa fa-youtube"></i> Youtube </a>
-                
-                <a href="https://www.twitter.com/myunusseker"><i class="fa fa-twitter"></i> Twitter </a>
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li class="page"><a href="/index.html"><i class="fa fa-home"></i> Homepage</a></li>
-                    <li class="page"><a href="/resume.html"><i class="fa fa-user"></i> Resume / CV</a></li>
-                    <li class="page"><a href="/publications.html"><i class="fa fa-rocket"></i> Publications</a></li>
-                    <li class="page"><a href="/videos.html"><i class="fa fa-video-camera"></i> Project Videos</a></li>
-                    <li class="page"><a href="/fun.html"><i class="fa fa-star"></i> Fun</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-            </div><!--//education-container-->
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
-            <section class="skills-section section">
-                <h2 class="section-title"><i class="fa fa-rocket"></i>Publications</h2>
-                <div class="details">
-                    <div class="row">
-                        <div class="column">
-                            <ul style="list-style-type:square;">
-                                <li> ACNMP: Flexible Skill Formation through Learning from Demonstration and Reinforcement Learning via Representation Sharing
-                                    <br> <i>M.T. Akbulut, E. Oztop, <b>M.Y. Seker</b>, A.E. Tekden, E. Ugur</i> 
-                                    <br> Conference on Robot Learning, <b> CoRL 2020</b> 
-                                    <br><br> <a href="https://www.cmpe.boun.edu.tr/~emre/papers/Akbulut-2020-CORL.pdf"><i class="fa fa-newspaper-o"></i> Paper Link</a> 
-                                    <br> <a href="https://github.com/mtuluhanakbulut/ACNMP"><i class="fa fa-github"></i> Github Link</a></li>    
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <iframe style="margin-left: 20px" width="300" height="200" src="https://www.cmpe.boun.edu.tr/~emre/videos/Akbulut-2020-CORL.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="column">
-                            <ul style="list-style-type:square;">
-                                <li> Belief Regulated Dual Propagation Nets for Learning Action Effects on Articulated Multi-Part Objects 
-                                    <br> <i>A.E. Tekden, A. Erdem, E. Erdem, M. Imre, <b>M.Y. Seker</b>, E. Ugur </i> 
-                                    <br> The International Conference on Robotics and Automation, <b> ICRA 2020</b> 
-                                    <br><br> <a href="https://www.cmpe.boun.edu.tr/~emre/papers/Tekden-2020-ICRA.pdf"><i class="fa fa-newspaper-o"></i> Paper Link</a> 
-                                    <br> <a href=""><i class="fa fa-github"></i> Github Link</a></li>    
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <iframe style="margin-left: 20px" width="300" height="200" src="https://www.youtube.com/embed/uWPr7IFT_9k?rel=0 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="column">
-                            <ul style="list-style-type:square;">
-                                <li> Conditional Neural Movement Primitives 
-                                    <br> <i><b>M.Y. Seker</b>, M. Imre, J. Piater, E. Ugur</i> 
-                                    <br> Robotics Science and Systems, <b>RSS 2019</b> 
-                                    <br><br> <a href="http://www.roboticsproceedings.org/rss15/p71.pdf"><i class="fa fa-newspaper-o"></i> Paper Link</a> 
-                                    <br> <a href="https://github.com/myunusseker/CNMP"><i class="fa fa-github"></i> Github Link</a></li>    
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <iframe style="margin-left: 20px" width="300" height="200" src="https://www.youtube.com/embed/cPKOIaf0mUc?rel=0 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="column">
-                            <ul style="list-style-type:square;">
-                                <li> Deep Effect Trajectory Prediction in Robot Manipulation 
-                                    <br> <i><b>M.Y. Seker</b>, A.E. Tekden, E. Ugur</i> 
-                                    <br> Robotics and Autonomous Systems, <b>RAS 2019</b> 
-                                    <br><br> <a href="https://www.sciencedirect.com/science/article/pii/S0921889019300740"><i class="fa fa-newspaper-o"></i> Paper Link</a>
-                                    <br> <a href="https://github.com/Fzaero/Deep-Effect-Trajectory-Prediction-in-Robot-Manipulation"><i class="fa fa-github"></i> Github Link</a></li>    
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <iframe style="margin-left: 20px" width="300" height="200" src="https://www.youtube.com/embed/dFPOH1C3DeY?rel=0 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="column no-video">
-                            <ul style="list-style-type:square;">
-                                <li> Action - Effect Prediction Using Shape Context 
-                                    <br> <i><b>M.Y. Seker</b>, E. Cagirici, E. Ugur</i> 
-                                    <br> Turkish Robotics Conference, <b>ToRK 2018 (Best Paper Nominee)</b>  
-                                    <br><br> <a href="https://drive.google.com/file/d/1NLhmY9GD1XNCez_7gqfVUeSagpLXEXdQ/view"><i class="fa fa-newspaper-o"></i> Paper Link 
-                                    <br> <a href="https://www.cmpe.boun.edu.tr/~emre/papers/Seker-2018-TORK.pdf"><i class="fa fa-newspaper-o"></i> Paper Link (Turkish)</a></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <hr>
-                </div><!--//details-->
-            </section><!--//skills-section-->
-        </div><!--//main-body-->
+<div class="row">
+    <div class="col-12 col-lg-10">
+        {% for year in pubs_by_year %}
+        {% assign num_papers = year.items | size %}
+        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
+            {% for item in year.items %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+        {% endfor %}
     </div>
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-        </div><!--//container-->
-    </footer><!--//footer-->
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
-</body>
-</html> 
 
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+            {% for year in pubs_by_year %}
+            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
