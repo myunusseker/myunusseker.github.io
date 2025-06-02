@@ -30,3 +30,52 @@ container_class: container-xl
     {% endfor %}
 </div>
 {% endfor %}
+<script>
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.setAttribute('draggable', 'false');
+      img.style.userDrag = 'none';
+      img.style.webkitUserDrag = 'none';
+    });
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('img');
+
+    images.forEach(img => {
+      // Create a wrapper div
+      const wrapper = document.createElement('div');
+      wrapper.style.position = 'relative';
+      wrapper.style.display = 'inline-block';
+
+      // Clone the original image
+      const clone = img.cloneNode(true);
+      clone.setAttribute('draggable', 'false');
+      clone.style.pointerEvents = 'none';
+      clone.style.userDrag = 'none';
+      clone.style.webkitUserDrag = 'none';
+
+      // Create a transparent overlay div
+      const overlay = document.createElement('div');
+      overlay.style.position = 'absolute';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.right = '0';
+      overlay.style.bottom = '0';
+      overlay.style.zIndex = '10';
+
+      // Replace original image with wrapped version
+      img.parentNode.insertBefore(wrapper, img);
+      wrapper.appendChild(clone);
+      wrapper.appendChild(overlay);
+      img.remove();
+    });
+  });
+</script>
